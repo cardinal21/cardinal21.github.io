@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css ">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo_transparent.png" alt="logo">
+    </header>
+    <section>
+        <h2>Welcome to Temple Inn and Suites: Our mission is to provide you with the best service possible.</h2>
+    </section>
+    <nav>
+        <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
+    <ul id="menu">
+        <li class="home"><a href="home.html">Home</a></li>
+        <hr>
+       <li class="contact" > <a href="contact.html">about us</a></li>
+       <hr>
+       <li class="reserve"> <a class="active" href="reserve.html">Book a Room</a></li>
+       <hr>
+        <li class="services"><a  href="services.html">Accomidations</a></li>
+        <hr>
+        <li class="temples"><a  href="temples.htm">Temples</a></li>
+        
+    </ul>
+    </nav>
+    <main>
+    <section>
+        <h1>
+            Reserve Your Spot Today:
+        </h1>
+        <div class="flex-container">
+        <form id ='reserve' method ="POST" action="#">
+
+            <label for="fullname">Full Name:</label>
+		<input id="fullname" type="text" name="fullname" required pattern="([a-zA-Z0-9 ]){5,}" oninvalid="this.setCustomValidity('Please Enter Your Full Name')" oninput="setCustomValidity('')"> <span class="required">*</span><br>
+
+        <label for="email">E-Mail:</label>
+		<input id="email" type="email" name="email"><br>
+
+        <label for="phone">Phone:</label>
+		<input id="phone" type="tel" name="phone" required placeholder="###-###-####"><span class="required">*</span><br>
+
+        <label for="zip">Zipcode: </label>
+		<input id="zip" type="number" required name="zip" value=""><span class="required">*</span><br>
+
+        <label for="Country/State">Country/State:</label>
+		<input id="Country/State" type="text" name="Country/State" required pattern="([a-zA-Z0-9 ]){5,}" oninvalid="this.setCustomValidity" oninput="setCustomValidity('')"> <span class="required">*</span><br>
+
+        <label for="date_check_in">Check-In: </label>
+		<input id="date_check_in" type="date" name="date_check_in" value=""><br>
+
+        <label for="date_check_out">Check-Out: </label>
+		<input id="date_check_out" type="date" name="date_check_out" value=""><br>
+
+
+            <label for="location">Locations Avaliable:</label>
+            <select id = 'location'>
+                <option value="Locations">Select Location...</option>
+                <option value="Idaho Falls">Idaho Falls</option>
+                <option value="Rexburg">Rexburg</option>
+                <option value="Kansas City">Kansas City</option>
+                <option value="Oklahoma">Oklahoma City</option>
+                </select><br>
+
+            <label for="rooms">Rooms Requested:</label>
+		<input id="rooms" type="range" name="rooms" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="rooms_requested">5</span><br>
+
+        <select id = 'location'>
+            <option value="room_type">Select type...</option>
+            <option value="1_queen">1 Queen</option>
+            <option value="2_queen">2 Queen</option>
+            <option value="2_twin">2 Twin</option>
+            <option value="1_king">1 King</option>
+            </select><br>
+
+            <label for="Additional">Additional Information / Comments</label><br>
+		<textarea id="Additional" name="Additional"></textarea>
+            <script src="scripts/script.js"></script>
+        </form>
+    </div>
+
+    </main>
+</section>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston Town Weather Page">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans%7cTitillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        </style>      
+    <title>Preston Weather</title>
+  </head>
+  <body onload="writedate()">
+    <div id="announce" style="display: block;"></div>
+    <header>
+        <img class="logo" src="img/logo.jpg" alt="Weather Site Logo">
+        <h1>Good Time Weather</h1>
+        <h2 class="subheading">"All the weather for those good times"</h2>
+    </header>
+    <nav>
+        <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#"  class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>		
+      </nav>
+    <main>
+      <h2 class= "town">Preston</h2>
+      <div class="town1">
+				<img src="img/sky.jpg" alt="beautiful_clouds">
+				  <section class="summary">
+   			    <h3>Weather Summary</h3>
+   				  <p>Currently: Cloudy</p>
+   				  <p>High: 70 °F</p>
+   				  <p>Wind Chill: °F</p>
+            <p>Humidity: 40%</p>
+            <p>Wind Speed: 4 mph</p>
+  				</section>
+			</div>
+      <div class="forecast">
+				<h3>5 Day Forecast</h3>
+				<table id="fiveDay">
+          <thead>
+              <tr id="forecastDay">
+                  <th>Mon</th>
+                  <th>Tues</th>
+                  <th>Wed</th>
+                  <th>Thurs</th>
+                  <th>Fri</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <img src="img/sunny.JPG" alt="Image of Day 1 Forecast">
+                      <br>
+                      <span id="degrees1">80 °F</span>
+                  </td>
+                  <td>
+                      <img src="img/part-cloudy.JPG" alt="Image of Day 2 Forecast">
+                      <br>
+                      <span id="degrees2">75 °F</span>
+                  </td>
+                  <td>
+                      <img src="img/rain.JPG" alt="Image of Day 3 Forecast">
+                      <br>
+                      <span id="degrees3">70 °F</span>
+                  </td>
+                  <td>
+                      <img src="img/part-cloudy.JPG" alt="Image of Day 4 Forecast">
+                      <br>
+                      <span id="degrees4">74 °F</span>
+                  </td>
+                  <td>
+                      <img src="img/sunny.JPG" alt="Image of Day 5 Forecast">
+                      <br>
+                      <span id="degrees5">75 °F</span>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+			</div>
+      <div class="articlediv">
+        <img id="article_img" src="img/dock.jpg" alt="Storm Image">
+        <h3>Article</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, cupiditate commodi. Tempore animi temporibus cum nemo
+             cumque! Rerum asperiores aliquam dolorum? Fugit commodi ullam nostrum unde tenetur praesentium facere vitae.</p>
+      </div>
+      <div class="contactdiv">
+        <div class="contact_info">
+          
+        <iframe id="map" src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+        <a href="https://www.embedgooglemap.net/en/"></a>
+      </div>
+    </main>
+    <footer>
+      <div>
+        &copy;<span id="copyright"></span> Zackery Tarantino</a>
+      </div>
+      <span id="dates"></span>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/ham.js"></script>
+  </body>
+</html>

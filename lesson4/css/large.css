@@ -1,0 +1,9 @@
+@media only screen and (min-width: 64em ) {
+   
+    footer div{-webkit-flex-flow: nowrap; flex-flow: nowrap; }
+   
+     header, nav, main, footer { 
+       margin: 0% 10%;
+       width: 80%;
+     }
+    }

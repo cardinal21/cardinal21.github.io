@@ -1,0 +1,35 @@
+{
+    "packages":[
+        {
+            "name":"telestial",
+            "food":"No",
+            "tables":"6",
+            "chairs":"30",
+            "set-up":"No",
+            "take-down":"No",
+            "music":"No",
+            "price":"$300.00"
+        },
+        {
+            "name":"terestrial",
+            "food":"No",
+            "tables":"12",
+            "chairs":"65",
+            "set-up":"Yes",
+            "take-down":"Yes",
+            "music":"No",
+            "price":"$700.00"
+        },
+        {
+
+            "name":"Celestial",
+            "food":"Yes",
+            "tables":"30",
+            "chairs":"150",
+            "set-up":"yes",
+            "take-down":"Yes",
+            "music":"Yes",
+            "price":"$2,500.00"
+        }
+    ]
+}

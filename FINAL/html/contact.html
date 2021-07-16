@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css ">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo_transparent.png" alt="logo">
+    </header>
+    <section>
+        <h2>Welcome to Temple Inn and Suites: Our mission is to provide you with the best service possible.</h2>
+    </section>
+    <nav>
+        <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
+    <ul id="menu">
+        <li class="home"><a href="html/home.html"></a>Home</li>
+       <li class="contact"> <a class="active" href="html/contact.html">about us<img src="img/contact.jpg" alt=""></a></li>
+       <li class="reserve"> <a  href="html/reserve.html"><button>Book your stay</button><img src="img/reserve.jpg" alt=""></a></li>
+        <li class="services"><a  href="html/services.html">Accomidations<img src="img/services.jpg" alt=""></a></li>
+        <li  class="temples"><a  href="html/temples.html">Temples<img src="img/India.jpg" alt=""></a></li>
+    </ul>
+    </nav>
+    <main>
+    <section>
+        <h1>Tell Us How We Did:</h1>
+        <h3>Or just say high....</h3>
+
+        <form id= 'customer_reply' method="POST" action="#">
+
+            <label for="reply_fullname">Full Name:</label>
+		<input id="reply_fullname" type="text" name="reply_fullname" required pattern="([a-zA-Z0-9 ]){5,}" oninvalid="this.setCustomValidity('Please Enter Your Full Name')" oninput="setCustomValidity('')"> <span class="required">*</span><br>
+        
+        <label for="reply_phone">Phone:</label>
+		<input id="reply_phone" type="tel" name="reply_phone" required placeholder="###-###-####"><span class="required">*</span><br>
+        
+        <label for="reply_Additional">Additional Information / Comments</label><br>
+		<textarea id="reply_Additional" name="reply_Additional"></textarea>
+        </form>
+</section>
+
+<section>
+    <h1>Contact Us:</h1>
+    <p>Phone: (555)555-5555</p>
+    <p>address:
+        4800 Montgomery Ln #300, Bethesda, MD 20814
+    </p>
+    <p>
+        email: sales@templeinn.com
+    </p>
+    <div class="mapouter"><div class="gmap_canvas">
+        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln,%20Bethesda,%20MD%2020814&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <a href="https://soap2day-to.com">soap2day</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a>
+        <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+        <script src="scripts/script.js"></script>
+</section>
+</main>
+</body>
+</html>

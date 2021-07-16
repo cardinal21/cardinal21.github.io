@@ -1,0 +1,85 @@
+
+body{
+    background-color: #BEC5AD;
+}
+.logo{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+nav { 
+    border-radius: 2em;
+    background-color: #519872}
+nav button {
+    font-family: 'Cormorant Garamond', serif;
+     width:100%; 
+     color: #34252F;
+     padding:5px 0px;
+     background-color: #519872;}
+
+
+nav button i{
+    color:rgba(255, 255, 0, 0.575)
+}
+
+nav ul {
+  font-size: 16px;
+    display:none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+nav hr {
+    background-color: black;
+    height: 0.1em;
+    border-width: 0;
+}
+
+nav ul li a {
+    font-family: 'Cormorant Garamond', serif;
+    display: block;
+    color: #BEC5AD;
+    text-align: center;
+    padding: 2px 16px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+.responsive{display:block}
+
+nav ul li a:hover {
+    color: red;
+}
+
+nav ul li:last-child a {
+   border-right:0px;
+   
+   
+}
+
+p{
+    font-family: 'Arvo', serif;
+}
+main img{
+    width: 50%;
+}
+h1,h2,h3,h4,h5{
+    color: #34252F;
+    font-family: 'Arvo', serif;
+font-family: 'Cinzel', serif;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+

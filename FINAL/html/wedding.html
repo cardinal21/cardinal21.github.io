@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css ">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo_transparent.png" alt="logo">
+    </header>
+    <section>
+        <h2>Welcome to Temple Inn and Suites: Our mission is to provide you with the best service possible.</h2>
+    </section>
+    <nav>
+        <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
+    <ul id="menu">
+        <li class="home"><a href="home.html"></a>Home</li>
+       <li> <a class="contact" href="contact.html">about us<img src="img/contact.jpg" alt=""></a></li>
+       <li> <a class="reserve" href="reserve.html"><button>Book your stay</button><img src="img/reserve.jpg" alt=""></a></li>
+        <li><a class="services" href="services.html">Accomidations<img src="img/services.jpg" alt=""></a></li>
+        <li><a class="temples" href="temples.htm">Temples<img src="img/India.jpg" alt=""></a></li>
+    </ul>
+    </nav>
+    <main>
+        <h1>Our wedding packages:</h1>
+        <div class="table"></div>
+        <table>
+            <tr> <th>Tier</th>
+                <th>telestial</th>
+                <th>terestrial</th>
+                <th>celestial</th>
+            </tr>
+            <tr>
+                <th>Food</th>
+                <td>no</td>
+                <td>no</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <th>Tables</th>
+                <td>6</td>
+                <td>12</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>chairs</th>
+                <td>30</td>
+                <td>65</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <th>set-up</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <th>take-down</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <th>Music</th>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>$300.00</td>
+                <td>$700.00</td>
+                <td>$2,500.00</td>
+            </tr>
+        </table>
+    </main>
+    <section>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/wedding.js"></script>
+        <script src="data/wedding.json"></script>
+</section>
+</body>
+</html>

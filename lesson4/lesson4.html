@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatheranywhere</title>
+    <script src="js/date.js"></script>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        </style>
+</head>
+<body onload="writedate()"></body>
+<body>
+    <header>
+        <div><img src="img/logo.jpg" alt="logo"></div>
+        <div><h1>weatheranywhere</h1>
+        <h2  class="subheading">accurate weather Anywhere</h2>
+        </div>
+      </header>
+    
+      <nav>
+        <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="index.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>		
+      </nav>
+
+    </header>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="contentbox">Hero w/ weather summary</div>
+        <div class="contentbox">5 day forecast</div>
+        <div class="contentbox">article</div>
+        <div class="contentbox">contact information</div>
+
+
+    </main>
+    <footer>
+        <div>
+            @weatheranywhere|Attributions| Zackery Tarantino
+            <span id="dates"></span>
+        </div>
+        <script src="js/date.js"></script>
+        <script src="js/ham.js"></script>
+
+
+    </footer>    
+</body> 
+</html>

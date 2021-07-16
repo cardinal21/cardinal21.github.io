@@ -1,0 +1,69 @@
+{
+    "temples":[
+        {
+            "name":"Idaho Falls Temple",
+            "phone":"208-522-7559",
+            "email":"Sign in for email",
+            "address1":"1000 Memorial Dr.",
+            "city":"Idaho Falls",
+            "state":"ID",
+            "zip":83402,
+            "session_schedule":"by appointment",
+            "temple_closure":"by appointment",
+            "imageurl":"https://assets.ldscdn.org/90/a0/90a0c0d599f94a2d955930e90fa95b9aa85a5004/idaho_falls_idaho_temple.png",
+            "services":"Clothing rental available Cafeteria food servedNO patron housing availabl Distribution center nearby ",
+            "history":"The Idaho Falls Idaho Temple was the first temple built in Idaho. The Idaho Falls Idaho Temple was the only temple dedicated by President George Albert Smith. The Idaho Falls Idaho Temple was the first temple designed with a central spire. (The design represented a return to the use of spires, as the three previously dedicated temples featured no towers or spires.) The Idaho Falls Idaho Temple was originally named the Idaho Falls Temple. The presentation of the endowment was originally delivered by live acting in the Idaho Falls Idaho Temple. The east side of the Idaho Falls Idaho Temple originally featured a series of three reflecting ponds that were filled with water lillies and small fish. In the 1960s, the ponds were converted to flowerbeds. In 2011, the concrete ponds were removed as part of a landscaping renovation and replaced with a waterfall feature. The design of the Idaho Falls Idaho Temple was inspired by a vision of an ancient Nephite temple beheld by architect John Fetzer, Sr., who had prayed for guidance. While excavating through sand for the foundation of the Idaho Falls Idaho Temple, workers encountered solid lava rock beneath—an ideal foundation for the basement walls.",
+            "weather":""
+        },
+        {
+            "name":"Rexburg Idaho Temple",
+            "phone":"208-656-0880",
+            "email":"Sign in for email",
+            "address1":"750 S 2nd E",
+            "city":"Rexburg",
+            "state":"ID",
+            "zip":83440,
+            "session_schedule":"by appointment",
+            "temple_closure":"by appointment",
+            "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg",
+            "services":"Clothing rental available NO cafeteria food served NO patron housing available Distribution center nearby",
+            "history":"The Rexburg Idaho Temple was the third temple built in Idaho, following the Idaho Falls Idaho Temple (1945) and the Boise Idaho Temple (1984). The announcement of the Rexburg Idaho Temple came three and a half years after the announcement that two-year Ricks College would become four-year Brigham Young University–Idaho. The Rexburg Idaho Temple stands adjacent to Church-owned Brigham Young University–Idaho. The Church's other two universities; Brigham Young University in Provo, Utah, and Brigham Young University–Hawaii in Laie, Hawaii; also have adjacent temples.",
+            "weather":""
+        },
+        {
+            "name":"Kansas City Missouri Temple",
+            "phone":"816-413-1430",
+            "email":"Sign in for email",
+            "address1":"7001 Searcy Creek Pkwy",
+            "city":"Kansas City",
+            "state":"MO",
+            "zip":64119,
+            "session_schedule":"by appointment",
+            "temple_closure":"by appointment",
+            "imageurl":"https://assets.ldscdn.org/62/5e/625e0629b625e2596ad1c160a45f567f207560cc/kansas_city_temple_lds.jpg",
+            "services":"Clothing rental available NO cafeteria food served NO patron housing available NO distribution center nearby ",
+            "history":"The first attempt to build a temple in the Kansas City area was made by the early Saints in the 1830s when a temple site was dedicated in Independence, Missouri, in 1831. The site for a second temple was dedicated farther north in Far West, Missouri, in 1838. Those temples were never constructed, however, as the Latter-day Saints were driven out of Missouri pursuant to an extermination order issued by Governor Lilburn W. Boggs in 1838. Latter-day Saints had also settled in Kansas, but they left when Church headquarters were relocated to Nauvoo, Illinois, and then to Salt Lake City, Utah. As Church membership returned and grew in the Midwest beginning at the turn of the century, Kansas City's first stake was established in 1956. By 2008, Church membership in Kansas and Missouri had grown to 100,000 members in 21 stakes.",
+            "weather":""
+        },
+        {
+            "name":"Oklahoma City Oklahoma Temple",
+            "phone":"405-373-2309",
+            "email":"Sign in for email",
+            "address1":"12030 N Mustang Rd",
+            "city":"Yukon",
+            "state":"OK",
+            "zip":73099,
+            "session_schedule":"by appointment",
+            "temple_closure":"by appointment\n",
+            "imageurl":"https://assets.ldscdn.org/75/2c/752cf0dcfabe1870442460d13a2eeb8bda6267a2/oklahoma_city_temple_exterior.jpeg",
+            "services":[
+                "No clothing rental available\n",
+                "No cafeteria available\n",
+                "No patron housing available\n",
+                "No distribution center nearby\n"
+            ],
+            "history":"The Oklahoma City Oklahoma Temple closed on October 15, 2017, for an extensive renovation project that altered the exterior appearance of the building and fully upgraded the interior. \nIt was rededicated on Sunday, May 19, 2019, by President Henry B. Eyring, who was the second counselor in the First Presidency.",
+            "weather":""
+        }
+    ]
+}

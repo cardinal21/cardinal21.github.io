@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>weatheranywhere</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>function adjustRating(rating) {  document.getElementById("ratingvalue").innerHTML = rating;}</script>
+</head>
+<body>
+
+  <header>
+    <div><img src="img/logo.jpg" alt="logo"></div>
+    <div><h1>weatheranywhere</h1>
+    <h2  class="subheading">Accurate weather Anywhere</h2>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
+    <ul id="menu">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="index.html" class="active">Preston</a></li>
+    	<li><a href="#">Soda Springs</a></li>
+    	<li><a href="#">Fish Haven</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h1>Storm Center</h1>
+	<section>
+	<h5>What is going on in your area?</h5>
+	<form id="stormCenter" method="POST" action="./thanks.html">
+		<label for="fullname">Full Name:</label>
+		<input id="fullname" type="text" name="fullname" required pattern="([a-zA-Z0-9 ]){5,}" oninvalid="this.setCustomValidity('Please Enter Your Full Name')" oninput="setCustomValidity('')"> <span class="required">*</span><br>
+
+		<label for="email">E-Mail:</label>
+		<input id="email" type="email" name="email"><br>
+
+		<label for="phone">Phone:</label>
+		<input id="phone" type="tel" name="phone" required placeholder="###-###-####"><span class="required">*</span><br>
+		
+		<label for="zip">Zipcode: </label>
+		<input id="zip" type="number" required name="zip" value=""><span class="required">*</span><br>
+		
+		<label for="stormdate">Date: </label>
+		<input id="stormdate" type="date" name="stormdate" value=""><br>
+
+		<label for="stromtype">Event type:</label>
+		<input id="stromtype" name="stormtype" list="stormtype">
+		<datalist id="stormtype">
+			<option value="Flash Flood">
+			<option value="Hail">
+			<option value="Hurricane">
+			<option value="Thunderstorm">
+			<option value="Tornado">
+		</datalist><br>	
+
+		<label for="stormseverity">Storm Advisory (1 to 10)</label>
+		<input id="stormseverity" type="range" name="stormseverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
+
+
+		<label for="stormregion">Region</label>
+		<select id="stormregion" name="stormregion">
+		<option value="" disabled>Select Region ...</option>
+		<option value="Franklin">Franklin</option>
+		<option value="Greenville">Preston</option>
+		<option value="Springfield">Fish Lake</option>
+		</select><br>
+
+		<fieldset>
+			<label>Are you in need of assistance?</label><br>
+			<input type="radio" name="in-danger" value="yes">Yes<br>
+			<input type="radio" name="in-danger" value="maybe" checked> Maybe <br>
+			<input type="radio" name="in-danger" value="no"> No <br>
+		</fieldset>
+		<br>
+
+		<label for="Additional">Additional Information / Comments</label><br>
+		<textarea id="Additional" name="Additional"></textarea>
+		<br>		
+		<input type="submit" class="submit" value="Submit Now!">
+	</form>
+	</section>
+  </main>
+    
+  <footer>
+     
+      
+      <section class="section-half">
+        <h3>Phone</h3>
+        <p>(555)555-5555</p>
+      <h3>Email</h3>
+      <p>contact@weatheranywhere.com</p>
+      </section>
+    </div>
+      
+  </footer>
+  <script src="scripts/hamburger.js"></script>
+</body>
+</html>

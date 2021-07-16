@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+header{
+    background-color: aqua;
+}
+footer{
+    background-color: aqua;
+    align-self: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 25% 25% 25% 25% ;
+}
+img{
+    float: right;
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+header{
+    align-self: top;
+}
+    

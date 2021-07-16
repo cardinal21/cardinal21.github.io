@@ -1,0 +1,105 @@
+* { box-sizing: border-box;}
+
+body {
+  font-size: 16px;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #01172d;
+  font-style: italic;
+}
+
+header, nav, main, footer { 
+   	 max-width: 100%; 
+   	 margin: 0% 0.5%;
+    	width: 99%;
+}
+
+ section.section-half{ padding:0% 10%; width:80%}
+
+header { margin-bottom:30px!important; display: flex !important;  }
+header div h1 {  width: calc(100% - 150px);  font-size:24px; font-style: italic;  margin: 5px 0px 10px 0px;}
+header div img { margin-right:10px; width:110px }
+header div .subheading { margin:0px;  font-size:16px;  font-style: italic;}
+
+nav { background-color: #002f5f}
+nav button { width:100%; color:#FFF;border:0px; font-size: 20px;padding:5px 0px;text-align:left; background-color: #929292;}
+nav button i{margin-left:5px;color:#FFF;}
+
+
+nav ul {
+  font-size: 16px;
+    display:none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+border-radius:5px
+}
+
+nav ul li {
+    
+  width:auto;
+}
+
+nav ul li a {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 2px 16px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+nav ul li.active a{
+   color: #FFF;
+}
+
+nav ul li a:hover {
+    color: #FFF;
+}
+
+nav ul li:last-child a {
+   border-right:0px;
+}
+
+main { background:#FFF; border-radius:5px; padding-bottom:50px}
+main h1 {margin-top:15px;}
+main h2 {width:100%;}
+main figure {  margin: 0%; }
+
+
+
+
+#stormCenter {	width:90%;
+    min-width:250px;
+    margin:0 auto;
+}
+#stormCenter input, select { margin: 15px 30px; 
+    font-size:.8em; 
+    color: #3377bb; 
+    padding: .5rem; 
+    vertical-align: middle;
+}
+#stormCenter label { width: 400px; 
+    text-align:right;
+}
+#stormCenter fieldset {margin:20px 0px; 
+    padding:0px; 
+    border:0px
+}
+#stormCenter textarea{width:90%;
+    height:200px
+}
+#stormCenter .submit{background-color: #002f5f; 
+    color:#FFF; 
+    border:0px; 
+    border-radius:4px;
+    font-size:22px
+}
+.required{color:red}
+
+footer{width:100%;
+    margin-top:30px!important;  
+    background:#FFF; 
+    border-radius:5px
+}
