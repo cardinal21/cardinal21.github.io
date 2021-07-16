@@ -1,2 +1,9 @@
 @media only screen and (min-width: 64em ){
+    header, nav, main, footer { 
+        margin: 0%;
+        width: 100%;
+      }
+      header{
+        
+      }
 }

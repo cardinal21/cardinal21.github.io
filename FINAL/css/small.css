@@ -4,7 +4,8 @@ body{
 }
 .logo{
     display: block;
-    width: 50%;
+    width: 200px;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -64,6 +65,12 @@ nav ul li:last-child a {
    
    
 }
+nav h2{
+    text-align: end;
+      text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 p{
     font-family: 'Arvo', serif;
@@ -81,5 +88,8 @@ font-family: 'Cinzel', serif;
     display: flex;
     justify-content: center;
     align-content: space-around;
+}
+header{height:100%;
+    background-image: linear-gradient(to right, rgba(68, 253, 114, 0), rgb(234, 248, 110));;
 }
 
