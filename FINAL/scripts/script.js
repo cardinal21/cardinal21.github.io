@@ -6,10 +6,10 @@ function ShowMenu() {
     } else {
         x.className = "";
     }
-  }
+  };
 
 
-  fetch("data/temples.json")
+  fetch("../data/temples.json")
   .then(function (response) {
     return response.json();
   })
