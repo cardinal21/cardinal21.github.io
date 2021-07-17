@@ -1,6 +1,14 @@
 @media only screen and (min-width: 32.5em) {
 
-    
+    .content{
+        background-color: #BEC5AD;
+        margin-right: 4.5em;
+        margin-left: 4.5em;
+    }
+    body{
+        min-width: 1em;
+        background-color:crimson;
+    }
   
     footer {
       border-radius: 15px;
@@ -15,7 +23,7 @@
     #map {
       grid-column: 1;
       grid-row: 1;
-      height: 280px;
+      height: 100%;
     }
     nav button { display:none; } 
     nav ul { display:block; }

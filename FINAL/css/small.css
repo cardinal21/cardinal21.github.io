@@ -1,6 +1,8 @@
 
-body{
+.content{
+
     background-color: #BEC5AD;
+
 }
 .logo{
     display: block;
@@ -9,10 +11,14 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+section.end{
+   background-color: darkgray;
+}
+
+
 
 
 nav { 
-    border-radius: 2em;
     background-color: #519872}
 nav button {
     font-family: 'Cormorant Garamond', serif;
@@ -73,14 +79,13 @@ nav h2{
 }
 
 p{
-    font-family: 'Arvo', serif;
+    font-family: 'Raleway', sans-serif;
 }
 main img{
     width: 50%;
 }
 h1,h2,h3,h4,h5{
     color: #34252F;
-    font-family: 'Arvo', serif;
 font-family: 'Cinzel', serif;
 }
 
@@ -92,4 +97,15 @@ font-family: 'Cinzel', serif;
 header{height:100%;
     background-image: linear-gradient(to right, rgba(68, 253, 114, 0), rgb(234, 248, 110));;
 }
+.quote{
+    font-size: 25px;
+}
+.call_to_action {
+    height: 200px;
+    border: 2px solid green;
+    text-align: center;
+}
 
+div.call_to_action{
+    text-align: center;
+}
