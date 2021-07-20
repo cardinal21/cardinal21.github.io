@@ -96,3 +96,12 @@ nav ul { display: flex; }
   width: 50%;
   text-align: center;
 }
+td img {
+  width: 50%;
+}
+
+picture{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

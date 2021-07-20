@@ -18,8 +18,8 @@
     <div id="announce" style="display: block;"></div>
     <header>
         <img class="logo" src="img/logo.jpg" alt="Weather Site Logo">
-        <h1>Good Time Weather</h1>
-        <h2 class="subheading">"All the weather for those good times"</h2>
+        <h1>Weatheranywhere</h1>
+        <h2 class="subheading">"accurate weather anywhere"</h2>
     </header>
     <nav>
         <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
@@ -31,18 +31,24 @@
             <li><a href="#">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>		
+        <picture>
+          <source media="(min-width: 680px)" srcset="img/preston_large.jpg">
+          <source media="(min-width: 465px)" srcset="img/preston_medium.jpg">
+        <img src="img/preston_small.jpg" alt="Picture of hero" style="width: 100%;" >
+        </picture>
       </nav>
     <main>
+     
       <h2 class= "town">Preston</h2>
       <div class="town1">
 				<img src="img/sky.jpg" alt="beautiful_clouds">
 				  <section class="summary">
    			    <h3>Weather Summary</h3>
    				  <p>Currently: Cloudy</p>
-   				  <p>High: 70 °F</p>
-   				  <p>Wind Chill: °F</p>
+   				  <p>Temp: <span id="temp"></span>&#176;</p>
+   				  <p>Wind Chill: <span id="chill"></span>&#176;</p>
             <p>Humidity: 40%</p>
-            <p>Wind Speed: 4 mph</p>
+            <p>Wind Speed: <span id="speed"></span>&#176;</p>
   				</section>
 			</div>
       <div class="forecast">
@@ -91,8 +97,11 @@
       <div class="articlediv">
         <img id="article_img" src="img/dock.jpg" alt="Storm Image">
         <h3>Article</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, cupiditate commodi. Tempore animi temporibus cum nemo
-             cumque! Rerum asperiores aliquam dolorum? Fugit commodi ullam nostrum unde tenetur praesentium facere vitae.</p>
+        <p>For 50 years, the National Weather Service has taken atmospheric readings twice a day from an outpost on Cape Cod. But the very storms it helps to predict have eroded the bluff where the facility sits, and this week, crews started to tear it down. Eve Zuckoff from member station WCAI reports.
+
+          EVE ZUCKOFF, BYLINE: On a sunny day at the Monomoy National Wildlife Refuge, meteorologist Andy Nash marvels and worries about what he sees.
+          
+          ANDY NASH: There's a really nice view of the ocean right now. It's pretty. You can see sandbars off in the distance. Six, eight months ago, you couldn't see that water because there was another 50 to 80 feet of bluff and trees. And that is all gone now, and hence the need to not be here anymore.</p>
       </div>
       <div class="contactdiv">
         <div class="contact_info">
@@ -110,5 +119,6 @@
     </footer>
     <script src="js/date.js"></script>
     <script src="js/ham.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>
