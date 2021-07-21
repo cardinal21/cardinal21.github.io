@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?zip=83276,us&units=imperial&APPID=65d62601bd4e69b85181051b8969c9b2";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?zip=83276,us&units=imperial&APPID=4a0da07cb68f3189d3a396b77864e5b7";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -16,7 +16,7 @@ fetch(apiURL)
     }
   });
 
-  const apiURL2 ="api.openweathermap.org/data/2.5/forecast?q=FishHaven&appid=26c38b01d282609ea001da898c42e8a9";
+  const apiURL2 ="api.openweathermap.org/data/2.5/forecast?zip=83276,usappid=4a0da07cb68f3189d3a396b77864e5b7";
 fetch(apiURL2)
   .then((response) => response.json())
   .then((forecast) => {
@@ -38,11 +38,36 @@ fetch(apiURL2)
         img.setAttribute('alt', forecast.list[item].weather[0].main);
         card.appendChild(img);
 
-        let ttemp = document.createElement('span');
+        let tt = document.createElement('span');
         ttemp.textContent = forecast.list[item].main.temp.toFixed(1) + " °F";
-        card.appendChild(ttemp);
+        card.appendChild(tt);
         document.querySelector('div.forecast').appendChild(card);        
       }
 
     }
   });
+
+
+  let url="https://byui-cit230.github.io/weather/data/towndata.json"
+
+fetch(url)
+.then((Response) => Response.json())
+.then((jsObject) => {
+  console.log(jsObject);
+  const events = document.querySelector('.townevent');
+  let towns = jsObject['towns'];
+  towns.forEach(town => {
+    if (town.name == 'Soda Springs'){
+      let h2 = document.createElement('h2');
+      let ul = document.createElement('ul');
+      h2.textContent = 'Events in ' + town.name;
+      events.appendChild(h2);
+      town.events.forEach(event => {
+        let li = document.createElement('li');
+        li.textContent = event;
+        ul.appendChild(li);
+      });
+      events.appendChild(ul);
+    }
+  });
+});
