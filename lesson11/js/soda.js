@@ -16,7 +16,7 @@ fetch(apiURL)
     }
   });
 
-  const apiURL2 ="https://api.openweathermap.org/data/2.5/weather?zip=83276,us&units=imperial&appid=65d62601bd4e69b85181051b8969c9b2";
+  const apiURL2 ="api.openweathermap.org/data/2.5/forecast?q=FishHaven&appid=26c38b01d282609ea001da898c42e8a9";
 fetch(apiURL2)
   .then((response) => response.json())
   .then((forecast) => {

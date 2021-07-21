@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>weatheranywhere</title>
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="css/">
-  <link rel="stylesheet" href="css/small.css">
-  <link rel="stylesheet" href="css/medium.css">
-  <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/small.css">
+  <link rel="stylesheet" href="style/medium.css">
+  <link rel="stylesheet" href="style/large.css">
+  <link rel="stylesheet" href="style/table.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>function adjustRating(rating) {  document.getElementById("ratingvalue").innerHTML = rating;}</script>
 </head>
@@ -100,10 +101,16 @@
         <p>(555)555-5555</p>
       <h3>Email</h3>
       <p>contact@weatheranywhere.com</p>
+	  <div>
+        &copy;<span id="copyright"></span> Zackery Tarantino</a>
+      </div>
+      <span id="dates"></span>
       </section>
     </div>
       
   </footer>
-  <script src="js/hamburger.js"></script>
+<script src="js/ham.js"></script>
+<script src="js/lazyload.js"></script>
+<script src="js/date.js"></script>
 </body>
 </html>

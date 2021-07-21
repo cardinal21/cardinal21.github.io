@@ -1,0 +1,10 @@
+body{font-family: Ubuntu, sans-serif;}
+table{margin:0 auto;border:1px solid #ccc;border-collapse: collapse;}
+td, th {border: 2px solid #ddd;padding: 5px;}
+th{background:#628ca6;color:#FFF;}
+tr:nth-child(1) th{background:#7fb9c2;color:#000;font-size:22px;}
+tr{background:#e7f0ed;padding:5px}
+tr:nth-child(even) {background:#e7ffed}
+td{text-align:center;font-size:14px;padding:5px}
+td:hover{background:#628ca6;color:#FFF;}
+tfoot tr td{background:#7fb9c2;font-size:10px;color:#000}
