@@ -7,5 +7,12 @@
        width: 80%;
      }
    
-     
+     .active{
+      color: red;
+   }
+   .responsive{display:block}
+   
+   nav ul li a:hover {
+       color: green;
+   }
     }

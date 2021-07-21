@@ -4,3 +4,11 @@
     flex-flow: wrap;
     justify-content: space-around;
     margin: 40px 0; }
+    .active{
+        color: red;
+     }
+     .responsive{display:block}
+     
+     nav ul li a:hover {
+         color: green;
+     }

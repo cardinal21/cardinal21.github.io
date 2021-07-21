@@ -1,8 +1,20 @@
+@media only screen and (min-width: 300px) {
+  
 
 body {
   font-family: 'Merriweather Sans', sans-serif;
   color: black;
   font-style: italic;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 960px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 header, nav, main, footer { 
@@ -12,7 +24,13 @@ header, nav, main, footer {
         width: 100%;
 }
 
-header { margin-bottom:30px; display: flex;  }
+header {
+  padding-top: 10px;
+  background-color: #4ef12d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 header div h1 {  width: calc(100% - 150px); 
   font-size:24px;
   font-style: italic; 
@@ -98,21 +116,9 @@ footer{width:100%;margin-top:30px; background:whitesmoke;border-top:2px solid gr
 #degrees1, #degrees2, #degrees3, #degrees4, #degrees5 {
   color: #05386b;
 }
-#fiveDay {
-  margin: 0 auto;
-  width: auto;
-  text-align: center;
-  color: #05386b;
-}
-.forecast {
-  display: none;
-  text-align: center;
-}
-#forecastDay {
-  background-color: cyan;
-  color: #05386b;
-  font-family: Century-Gothic;
-}
+
+
+
 header img {
   height: 80px;
   width: auto;
@@ -124,6 +130,7 @@ header img {
   
 .town1 img {
   width: 100%;
+  max-height: 300px;
 }
 #map {
   margin: auto;
@@ -161,3 +168,53 @@ display: block;
 margin: 0 auto;
 max-width: 100%;
 }
+
+.forecast section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forecast section span {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.4rem;
+}
+.forecast section img {
+  padding-top: 10px;
+}
+.forecast{
+  display: none;
+}
+
+
+
+.art section {
+  padding: .35rem;
+	max-width: 600px;
+  margin: .5rem auto;
+	border:1px solid #bbb;
+  background-color: #eee;
+	display:block;
+}
+
+.art article {
+  padding: .35rem;
+ display: block;
+
+}
+
+.art article:nth-child(odd) {
+  padding: .35rem;
+}
+
+.art img {
+  padding: .35rem;border:1px solid #000080; max-width: 300px; max-height: 150px;}
+.art .data {
+  padding: .35rem;background-color:rgb(46, 18, 18); color:#fff;}
+
+  footer{width:100%;
+    margin-top:30px!important;  
+    background:#FFF; 
+    border-radius:5px
+}
+
+ }

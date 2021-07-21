@@ -22,5 +22,13 @@
     
     nav button { display:none; } 
     nav ul { display: flex; }
+    .active{
+      color: red;
+   }
+   .responsive{display:block}
+   
+   nav ul li a:hover {
+       color: green;
+   }
   
     }
